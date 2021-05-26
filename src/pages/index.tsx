@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
+import Head from 'next/head';
+import Layout, { siteTitle } from '../components/layout';
 
 export default function Home({ allPostsData }) {
   return (
@@ -8,7 +8,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section>
-        <p>This is a sample website</p>
+        <p className="m-4">Hello NextJS</p>
         <div className="flex justify-left lg:justify-center ">
           <button className="px-6 py-2 font-semibold text-white transition duration-500 ease-in-out transform bg-black rounded-lg hover:bg-gray-800 hover:to-black focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
             Button
@@ -19,12 +19,11 @@ export default function Home({ allPostsData }) {
         </div>
       </section>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps() {
   return {
-    props: {
-    }
-  }
+    props: {},
+  };
 }
