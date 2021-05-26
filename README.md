@@ -1,1 +1,1 @@
-nextjs-typescript-tailwind-boilerplate 
+(Next.js + Typescript + Tailwind) quickstarter
