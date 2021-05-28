@@ -9,7 +9,7 @@ const Home: React.FC = () => {
         <title>{siteTitle}</title>
       </Head>
       <section>
-        <p className="m-4">Hello NextJS</p>
+        <p className="m-4">Hello World</p>
         <div className="flex justify-left lg:justify-center ">
           <button className="px-6 py-2 font-semibold text-white transition duration-500 ease-in-out transform bg-black rounded-lg hover:bg-gray-800 hover:to-black focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
             Button
