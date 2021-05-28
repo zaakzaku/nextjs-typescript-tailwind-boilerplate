@@ -1,9 +1,10 @@
-import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import React from 'react'
+import Head from 'next/head'
+import Layout, { siteTitle } from '../components/layout'
 
-export default function Home({ allPostsData }) {
+const Home: React.FC = () => {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -19,11 +20,7 @@ export default function Home({ allPostsData }) {
         </div>
       </section>
     </Layout>
-  );
+  )
 }
 
-export async function getStaticProps() {
-  return {
-    props: {},
-  };
-}
+export default Home
